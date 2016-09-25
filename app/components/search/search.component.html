@@ -1,6 +1,18 @@
 <h1>Need music?</h1>
 <form>
   <div class="form-group">
-    <input type="text" name="searchStr" [(ngModel)]="search" (keyup)="searchMusic()" class="form-control" placeholder="Search Music ...">
+    <input type="text" name="searchStr" [(ngModel)]="search" (keyup)="searchMusic()" class="form-control"
+           placeholder="Search Music ...">
   </div>
 </form>
+<div *ngIf="searchRes" class="results">
+  <div *ngFor="let artist of searchRes">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="search-res well">
+          <h4>{{artist.name}}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
