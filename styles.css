@@ -10,3 +10,13 @@
   float: left;
   margin-right: 10px;
 }
+
+.song{
+  background-color: darkgray;
+  margin-bottom: 15px;
+  color:black;
+}
+
+.album_name{
+  display: inline;
+}

@@ -10,6 +10,6 @@
   </header>
   <div class="albums">
     <div class="album col-md-6" *ngFor="let album of albums">
-      <img src="{{album.images[2].url}}">{{album.name}}</div>
+      <img src="{{album.images[2].url}}"><a routerLink="/album/{{album.id}}">{{album.name}}</a></div>
   </div>
 </div>

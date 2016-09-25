@@ -1,0 +1,12 @@
+<div class="album" *ngIf="album">
+  <img src="{{album.images[1].url}}">
+  <h1 class="album_name">{{album.name}}</h1>
+  <hr>
+  <div class="songs">
+    <div class="song row" *ngFor="let song of album.tracks.items">
+      <audio src="{{song.preview_url}}" controls></audio> <br>
+      {{song.name}}
+      <a href="{{song.uri}}">Open in Spotify</a>
+    </div>
+  </div>
+</div>
