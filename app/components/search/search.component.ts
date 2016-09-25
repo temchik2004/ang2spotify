@@ -18,7 +18,6 @@ export class SearchComponent {
 
   searchMusic() {
     this._spotify.searchMusic(this.search).subscribe(res=>{
-      console.log(res);
       this.searchRes = res.artists.items;
     });
   }
