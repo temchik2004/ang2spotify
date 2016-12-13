@@ -20,7 +20,8 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
-    "webdriver:update": "webdriver-manager update"
+    "webdriver:update": "webdriver-manager update",
+    "concurrently": "concurrently"
   },
   "keywords": [],
   "author": "",
